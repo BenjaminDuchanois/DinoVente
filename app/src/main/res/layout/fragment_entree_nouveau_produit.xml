@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentEntreeNouveauProduit"
+    android:background="@color/design_default_color_primary"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_gravity="center">
+
+
+    <EditText
+        android:id="@+id/nvproduit_NomProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="8"
+        android:hint="Nom du produit"
+        android:inputType="textCapSentences"
+        android:textColor="#eee"
+        android:textColorHint="#999"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/nvproduit_catégorie"
+        app:layout_constraintTop_toBottomOf="@+id/nvproduit_image" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <EditText
+        android:id="@+id/nvproduit_catégorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="8"
+        android:hint="Catégorie associée"
+        android:textStyle="italic"
+        android:inputType="textCapSentences"
+        android:textColor="#eee"
+        android:textColorHint="#999"
+        app:layout_constraintStart_toEndOf="@+id/nvproduit_test"
+        app:layout_constraintTop_toBottomOf="@+id/nvproduit_NomProduit" />
+
+    <EditText
+        android:id="@+id/nvproduit_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="8"
+        android:hint="Valeur unitaire"
+        android:textStyle="italic"
+        android:inputType="numberDecimal"
+        android:textColor="#eee"
+        android:textColorHint="#999"
+        app:layout_constraintStart_toStartOf="@+id/nvproduit_catégorie"
+        app:layout_constraintTop_toBottomOf="@+id/nvproduit_catégorie" />
+
+    <EditText
+        android:id="@+id/nvproduit_quantité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="8"
+        android:hint="Quantité entrée"
+        android:textStyle="italic"
+        android:inputType="number"
+        android:textColor="#eee"
+        android:textColorHint="#999"
+        app:layout_constraintStart_toStartOf="@+id/nvproduit_catégorie"
+        app:layout_constraintTop_toBottomOf="@+id/nvproduit_valeur" />
+
+    <Button
+        android:id="@+id/nvproduit_btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Créer"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nvproduit_btn_upload" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Nom :"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nvproduit_NomProduit"
+        app:layout_constraintEnd_toStartOf="@+id/nvproduit_NomProduit"
+        app:layout_constraintTop_toTopOf="@+id/nvproduit_NomProduit" />
+
+    <TextView
+        android:id="@+id/nvproduit_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catégorie :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/nvproduit_catégorie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nvproduit_catégorie" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Valeur :"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nvproduit_valeur"
+        app:layout_constraintEnd_toStartOf="@+id/nvproduit_valeur"
+        app:layout_constraintTop_toTopOf="@+id/nvproduit_valeur" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Quantité :"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nvproduit_quantité"
+        app:layout_constraintEnd_toStartOf="@+id/nvproduit_quantité"
+        app:layout_constraintTop_toTopOf="@+id/nvproduit_quantité" />
+
+    <Button
+        android:id="@+id/nvproduit_btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:text="Ajouter une photo"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/nvproduit_quantité"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/nvproduit_quantité" />
+
+    <ImageView
+        android:id="@+id/nvproduit_image"
+        android:layout_width="1in"
+        android:layout_height="1in"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

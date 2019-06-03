@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accueil"
+            android:icon="@drawable/ic_accueil"
+            android:title="Accueil" />
+    </group>
+
+    <item android:title="Stock">
+        <menu>
+            <group android:id="@+id/nav_stock" >
+                <item
+                    android:id="@+id/nav_nouveau"
+                    android:icon="@drawable/ic_ajouter"
+                    android:title="Nouveau Produit" />
+                <item
+                    android:id="@+id/nav_entrer"
+                    android:icon="@drawable/ic_entree"
+                    android:title="Entrée de stock" />
+                <item
+                    android:id="@+id/nav_sortir"
+                    android:icon="@drawable/ic_sortie"
+                    android:title="Sortie de stock" />
+                <item
+                    android:id="@+id/nav_liste"
+                    android:icon="@drawable/ic_liste"
+                    android:title="Liste des produits" />
+                <item
+                    android:id="@+id/nav_modif_produit"
+                    android:icon="@drawable/ic_modif"
+                    android:title="Modifier un nom" />
+                <item
+                    android:id="@+id/nav_categorie"
+                    android:icon="@drawable/ic_ajouter"
+                    android:title="Ajouter une catégorie" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Compte">
+        <menu>
+            <group android:id="@+id/nav_groupeconnect" >
+                <item
+                    android:id="@+id/nav_connexion"
+                    android:icon="@drawable/ic_connexion"
+                    android:title="Me connecter" />
+                <item
+                    android:id="@+id/nav_inscription"
+                    android:icon="@drawable/ic_inscription"
+                    android:title="M'inscrire" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Compte">
+        <menu>
+            <item
+                android:id="@+id/nav_deconnexion"
+                android:icon="@drawable/ic_deconnexion"
+                android:title="Déconnexion" />
+        </menu>
+    </item>
+
+</menu>

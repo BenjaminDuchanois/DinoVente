@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAccueil"
+    android:background="@color/design_default_color_primary">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/AxeHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/AxeVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <TextView
+        android:id="@+id/ProduitsStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Produits en stock"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/AxeHorizontal"
+        app:layout_constraintEnd_toStartOf="@+id/AxeVertical"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ValeurStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Valeur du stock"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/AxeHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/AxeVertical" />
+
+    <Button
+        android:id="@+id/EntréeStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Entrée de stock"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/AxeVertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AxeHorizontal"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="EntreeDeStock"/>
+
+    <Button
+        android:id="@+id/SortieStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Sortie de stock"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/AxeVertical"
+        app:layout_constraintTop_toTopOf="@+id/AxeHorizontal"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="SortieDeStock"/>
+
+    <TextView
+        android:id="@+id/accueil_nbProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ProduitsStock"
+        app:layout_constraintEnd_toEndOf="@+id/ProduitsStock"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/ProduitsStock" />
+
+    <TextView
+        android:id="@+id/accueil_nb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/accueil_nbProduit"
+        app:layout_constraintEnd_toEndOf="@+id/accueil_nbProduit"
+        app:layout_constraintStart_toStartOf="@+id/accueil_nbProduit" />
+
+    <TextView
+        android:id="@+id/accueil_valeurProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ValeurStock"
+        app:layout_constraintEnd_toEndOf="@+id/ValeurStock"
+        app:layout_constraintStart_toStartOf="@+id/ValeurStock" />
+
+
+
+</android.support.constraint.ConstraintLayout>

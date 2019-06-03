@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSortieStock"
+    android:background="@color/design_default_color_primary"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_gravity="center">
+
+
+    <Spinner
+        android:id="@+id/entree_NomProduit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/entree_catégorie"
+        app:layout_constraintTop_toBottomOf="@+id/entree_image" />
+
+    <EditText
+        android:id="@+id/entree_catégorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="8"
+        android:text="Catégorie trouvée"
+        android:textStyle="italic"
+        android:inputType="none"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#eee"
+        app:layout_constraintStart_toEndOf="@+id/entree_test"
+        app:layout_constraintTop_toBottomOf="@+id/entree_NomProduit" />
+
+    <EditText
+        android:id="@+id/entree_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="8"
+        android:text="Valeur trouvée"
+        android:textStyle="italic"
+        android:inputType="none"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#eee"
+        app:layout_constraintStart_toStartOf="@+id/entree_catégorie"
+        app:layout_constraintTop_toBottomOf="@+id/entree_catégorie" />
+
+    <EditText
+        android:id="@+id/entree_quantité"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minEms="2"
+        android:maxEms="4"
+        android:textStyle="italic"
+        android:inputType="number"
+        android:textColor="#eee"
+        app:layout_constraintStart_toStartOf="@+id/entree_catégorie"
+        app:layout_constraintTop_toBottomOf="@+id/entree_valeur" />
+
+    <Button
+        android:id="@+id/entree_sortir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Modifier"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entree_valeurTotale" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Nom :"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entree_NomProduit"
+        app:layout_constraintEnd_toStartOf="@+id/entree_NomProduit"
+        app:layout_constraintTop_toTopOf="@+id/entree_NomProduit" />
+
+    <TextView
+        android:id="@+id/entree_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catégorie :"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/entree_catégorie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/entree_catégorie" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Valeur :"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entree_valeur"
+        app:layout_constraintEnd_toStartOf="@+id/entree_valeur"
+        app:layout_constraintTop_toTopOf="@+id/entree_valeur" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="Quantité :"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entree_quantité"
+        app:layout_constraintEnd_toStartOf="@+id/entree_quantité"
+        app:layout_constraintTop_toTopOf="@+id/entree_quantité" />
+
+    <TextView
+        android:id="@+id/entree_valeurTotale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Valeur totale : Exemple €"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/entree_valeur"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/entree_quantité" />
+
+    <ImageView
+        android:id="@+id/entree_image"
+        android:layout_width="1in"
+        android:layout_height="1in"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/entree_quantitéMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="/ Max"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/entree_quantité"
+        app:layout_constraintStart_toEndOf="@+id/entree_quantité"
+        app:layout_constraintTop_toTopOf="@+id/entree_quantité" />
+
+
+</android.support.constraint.ConstraintLayout>

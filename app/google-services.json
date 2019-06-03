@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "448212955244",
+    "firebase_url": "https://dinovente80.firebaseio.com",
+    "project_id": "dinovente80",
+    "storage_bucket": "dinovente80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448212955244:android:0320a38da0140bac",
+        "android_client_info": {
+          "package_name": "com.example.dinovente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448212955244-a317bk5qsb0gpclcsi0gi9f396ioembr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dinovente",
+            "certificate_hash": "065a90782b61add488578df03a6bef8400e805bf"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCziDZFzi2bs0cB4dbBQpMbCNhTNDNvNtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448212955244-0uj3ls533ao1agic59cd30oqiqrghttk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
